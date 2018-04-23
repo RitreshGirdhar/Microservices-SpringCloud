@@ -1,0 +1,7 @@
+version: '2'
+services:
+  serviceRegistry:
+    container_name: serviceRegistry
+    image: serviceRegistry:1.0
+    ports:
+      - "8761:8761"
