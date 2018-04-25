@@ -43,3 +43,16 @@ Here i am giving you demo of ideal microservice architecture with running sample
 	# and Zipkin Server is running on one instance and all microservice & gateway pointing to zipkin base url.
 
 
+#Running Demo
+
+* Eureka
+	1. http://52.15.212.66:8761
+* MS1
+	1. http://13.59.166.163:9001/message
+* MS2
+	1. http://13.59.166.163:9002/v1
+* ZUUL
+	1. http://18.188.78.57:9000/ms1/v1
+	2. http://18.188.78.57:9000/ms2/v1
+* Zipkin 
+	1. http://52.15.212.66:9411/zipkin/
