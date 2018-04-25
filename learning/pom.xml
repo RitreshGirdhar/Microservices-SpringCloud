@@ -17,7 +17,9 @@
   	<module>../Admin</module>
   	<module>../Config</module>
   	<module>../Gateway</module>
+	  <!--
   	<module>../Hystrix</module>
+         -->
   	<module>../MS1</module>
   	<module>../MS2</module>
   	<module>../MS3</module>
