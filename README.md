@@ -1,7 +1,7 @@
 # Microservices-SpringCloud
 
 
-# Here i am giving you demo of ideal microservice architecture with running sample code.
+Here i am giving you demo of ideal microservice architecture with running sample code.
 
 # Components
 	* Edge Services - Gateway -> ZUUL
@@ -36,4 +36,10 @@
 	# Registered with Eureka
 	# pointing to cloud for fetching configuration
 	# Zipkin enable for tracing, in log you can check track id & span id
+
+
+# Trace & Monitoring
+	# In each microservice sleuth is enable which help in tracing the request
+	# and Zipkin Server is running on one instance and all microservice & gateway pointing to zipkin base url.
+
 
