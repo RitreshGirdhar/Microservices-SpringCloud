@@ -1,4 +1,4 @@
-package com.test.MS2;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,16 +6,12 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @EnableDiscoveryClient
-@EnableEurekaClient
 @SpringBootApplication
-public class Ms2Application {
+@EnableEurekaClient
+
+public class ApiGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Ms2Application.class, args);
+		SpringApplication.run(ApiGatewayApplication.class, args);
 	}
-	
-//	@Bean
-//    public AlwaysSampler alwaysSampler() {
-//        return new AlwaysSampler();
-//    }
 }
