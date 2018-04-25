@@ -37,3 +37,15 @@ Here i am giving you demo of ideal microservice architecture with running sample
 	* pointing to cloud for fetching configuration
 	* Zipkin enable for tracing, in log you can check track id & span id
 
+
+# Running Demo
+* Eureka 
+	* http://52.15.212.66:8761
+* MS1 
+	* http://13.59.166.163:9001/message
+* MS2 
+	* http://13.59.166.163:9002/v1
+* ZUUL 
+	* http://18.188.78.57:9000/ms1/v1
+	* http://18.188.78.57:9000/ms2/v1   
+   
