@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.test</groupId>
-	<artifactId>MS3</artifactId>
+	<artifactId>ms3</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>MS3</name>
+	<name>ms3</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -24,6 +24,7 @@
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Finchley.BUILD-SNAPSHOT</spring-cloud.version>
 		<spring-kafka.version>2.1.5.RELEASE</spring-kafka.version>
+		<docker.image.prefix>test</docker.image.prefix>
 	</properties>
 
 	<dependencies>
@@ -58,19 +59,20 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-		    <groupId>org.springframework.kafka</groupId>
-		    <artifactId>spring-kafka</artifactId>
-		    <!-- <version>${spring-kafka.version}</version> -->
-		</dependency>
+		
 
 		<dependency>
 	      <groupId>org.springframework.kafka</groupId>
 	      <artifactId>spring-kafka-test</artifactId>
 	     <!--  <version>${spring-kafka.version}</version> -->
 	      <scope>test</scope>
-	    </dependency>	
+	    </dependency>
 
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
@@ -86,10 +88,22 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>ms3</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>dockerfile-maven-plugin</artifactId>
+				<version>1.3.6</version>
+				<configuration>
+					<repository>${docker.image.prefix}/${project.artifactId}</repository>
+					<buildArgs>
+						<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+					</buildArgs>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
