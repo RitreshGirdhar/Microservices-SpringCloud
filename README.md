@@ -42,8 +42,9 @@ Here i am giving you demo of ideal microservice architecture with running sample
 	# In each microservice sleuth is enable which help in tracing the request
 	# and Zipkin Server is running on one instance and all microservice & gateway pointing to zipkin base url.
 
+
 I have enable docker for easy deployment and maintainence.
-You can find the docker images
+You can find the above docker images : https://hub.docker.com/u/ritreshgirdhar/
 https://store.docker.com/community/images/ritreshgirdhar/serviceregistry
 https://store.docker.com/community/images/ritreshgirdhar/config
 https://store.docker.com/community/images/ritreshgirdhar/ms1
