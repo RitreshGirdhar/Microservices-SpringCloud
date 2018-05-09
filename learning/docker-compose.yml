@@ -1,33 +1,6 @@
 version: '3.2'
 
 services:
-  ms1:
-     build: ../MS1
-     ports:
-         - "9001:9001"
-     tty:
-         true
-     restart:
-        unless-stopped
- 
-  ms2:
-    build: ../MS2
-    ports:
-         - "9002:9002"
-    tty:
-      true
-    restart:
-      unless-stopped
-      
-  ms3:
-    build: ../MS3
-    ports:
-         - "9003:9003"
-    tty:
-      true
-    restart:
-      unless-stopped
-  
   gateway:
     build: ../gateway
     ports:
@@ -53,6 +26,34 @@ services:
     tty:
       true
     restart:
-      unless-stopped   
+      unless-stopped 
+
+  ms1:
+     build: ../MS1
+     ports:
+         - "9001:9001"
+     tty:
+         true
+     restart:
+        unless-stopped
+
+  ms2:
+    build: ../MS2
+    ports:
+         - "9002:9002"
+    tty:
+      true
+    restart:
+      unless-stopped
+
+  ms3:
+    build: ../MS3
+    ports:
+         - "9003:9003"
+    tty:
+      true
+    restart:
+      unless-stopped
+ 
    
   

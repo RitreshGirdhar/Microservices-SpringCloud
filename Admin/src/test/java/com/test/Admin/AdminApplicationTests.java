@@ -1,12 +1,12 @@
 package com.test.Admin;
 
-import org.junit.Test;
+//import org.junit.Test;
 
 //@RunWith(SpringRunner.class)
 //@SpringBootTest
 public class AdminApplicationTests {
 
-	@Test
+//	@Test
 	public void contextLoads() {
 	}
 
