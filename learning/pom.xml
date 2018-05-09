@@ -14,5 +14,6 @@
   	<module>../MS2</module>
   	<module>../MS3</module>
   	<module>../Hystrix</module>
+  	<module>../ZipkinServer</module>
   </modules>
 </project>
