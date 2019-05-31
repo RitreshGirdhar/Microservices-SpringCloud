@@ -15,7 +15,7 @@
         <groupId>com.test</groupId>
         <artifactId>Microservices-example</artifactId>
         <version>1.0.0</version>
-        <relativePath/>
+        <relativePath>../</relativePath>
     </parent>
 
     <properties>

@@ -20,7 +20,7 @@
     <modules>
         <module>MS1</module>
         <module>MS2</module>
-        <module>MS3</module>
+        <!--<module>MS3</module>-->
         <module>ServiceRegistry</module>
         <module>Config</module>
     </modules>

@@ -12,9 +12,9 @@
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.1.RELEASE</version>
+		<groupId>com.test</groupId>
+		<artifactId>Microservices-example</artifactId>
+		<version>1.0.0</version>
 		<relativePath/>
 	</parent>
 
@@ -22,7 +22,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<spring-cloud.version>Finchley.BUILD-SNAPSHOT</spring-cloud.version>
 		<spring-kafka.version>2.1.5.RELEASE</spring-kafka.version>
 		<docker.image.prefix>test</docker.image.prefix>
 	</properties>
